@@ -133,7 +133,7 @@ border-radius: 6px; text-align: center; }
 .ela__innerNav_panel .case-filter-panel { max-height: 300px; overflow: scroll; overflow-x: hidden; color: #FFF; margin-bottom: 15px; }
 .ela__innerNav_panel .case-filter-panel ul,
 .ela__innerNav_panel .case-filter-panel ul li { list-style: none; padding: 0; margin: 0; }
-.ela__innerNav_panel .case-filter-panel ul li { font-size: 18px; padding: 1px 10px 1px 10px; font-weight: normal;  }
+.ela__innerNav_panel .case-filter-panel ul li { font-size: 18px; padding: 2px 10px 2px 10px; font-weight: normal;  }
 .ela__innerNav_panel .case-filter-panel ul li ul li { padding-left: 22px; }
 /* Hide the browser's default checkbox */
 .ela__innerNav_panel .case-filter-panel ul li input[type='checkbox'] {
@@ -605,17 +605,75 @@ border-radius: 10px;
 .showPopupViewDesign .popup-content.selectIconinfo .popupOverflowInfo { max-height: 230px;}
 
 
+/* CASE MANAGER STYLE START */
+.ela__sideNav_nav_flyout .casemanager_panel_section {
+    display: block;
+    clear: both;
+    padding-top: 20px;
+}
+.casemanager_panel_section { font-size: 14px; }
+.casemanager_panel_section .ui-widget.ui-widget-content { border: 0px solid #c5c5c5; padding: 0px; background: none; }
+.ui-widget-header {
+    border: 0px solid #dddddd;
+    background: none;
+    color: #333333;
+    font-weight: normal; font-family: 'Alternate Gothic No3 D', sans-serif;
+    }
+.casemanager_panel_section .ui-tabs .ui-tabs-nav { padding: 0; text-align: center; }
+.casemanager_panel_section .ui-tabs .ui-tabs-nav li { float: none; display: inline-block; margin: 0px 3px; border: 2px solid #FFF;
+    background: none;  border-radius: 0px; }
+.casemanager_panel_section .ui-tabs .ui-tabs-nav li a { color: #FFF; font-size: 18px; padding: 0px 15px; }
+.casemanager_panel_section .ui-tabs .ui-tabs-nav li.ui-tabs-active { background: #FFF; padding-bottom: 0px; }
+.casemanager_panel_section .ui-tabs .ui-tabs-nav li.ui-tabs-active a {  color: #5e5957; }
+.casemanager_panel_section .ui-tabs .ui-tabs-panel { padding: 15px 0px; }
+.casemanager_panel_section .ela__treeview_listing {  font-family: 'Alternate Gothic No3 D', sans-serif; font-size: 16px; }
+.casemanager_panel_section .case-filter-panel { max-height: 58vh;  }
+.casemanager_panel_section .case-filter-panel.case-filter-manage_panel {max-height: 72vh;}
+.case_ftbuttonMeta { display: block; text-align: center; }
+.case_ftbuttonMeta .btn-border { display: inline-block; vertical-align: middle; font-family: 'Alternate Gothic No3 D', sans-serif; font-size: 18px; padding: 0px 20px; background-color: transparent; color: #FFF; border: 2px solid #FFF; margin: 0px 2px; }
+.case_ftbuttonMeta .btn-border:hover { background-color: #FFF; color: #5e5957; }
+.casemanager_panel_section .ui-accordion .ui-accordion-content { padding: 10px 10px; }
+.case__tabs_panel .case-filter-panel ul li { padding: 2px 10px 2px 10px; }
 
+.case__tabs_panel .case_name_field { display: block; clear: both; margin-bottom: 10px; }
+.case__tabs_panel .case_name_field input[type='text'] { width: 100%; padding: 4px 10px; background-color: transparent; border: 2px solid #FFF; color: #b0b0b0; text-transform: uppercase;font-family: 'Alternate Gothic No3 D', sans-serif;  font-size: 18px; }
+.case__tabs_panel .case_name_field input[type='text']:focus { outline: none; }
+.case__tabs_panel .case_name_field input[type='text']::-webkit-input-placeholder { color: #b0b0b0; }
+.case__tabs_panel .case_name_field input[type='text']::-moz-placeholder { color: #b0b0b0; }
+.case__tabs_panel .case_name_field input[type='text']:-ms-input-placeholder { color: #b0b0b0; }
+.case__tabs_panel .case_name_field input[type='text']:-moz-placeholder { color: #b0b0b0; }
 
+/* Context menu */
+.ela__context-menu{
+    display: none;
+    position: absolute;
+    border: 1px solid #FFF;
+    padding: 5px;
+    border-radius: 3px;
+    width: 120px;
+    background: #FFF;
+    margin-top: -20px;
+}
+.ela__context-menu:before { content: ''; background-image: url(../images/icons/rightClick-arrow.png); background-repeat: no-repeat; background-size: 12px 19px; position: absolute; left: -10px; top: 10px;     width: 12px;
+    height: 19px; }
+.ela__context-menu ul{
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 0px;
+}
 
+.ela__context-menu ul li{
+    padding: 3px 10px;
+    font-size: 16px;
+    color: #000;
 
+}
 
-
-
-
-
-
-
+.ela__context-menu ul li:hover{
+    cursor: pointer;
+    background-color: #cfcfcf;
+    color: #000;
+}
 
 
 

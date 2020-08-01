@@ -592,3 +592,75 @@ border-radius: 10px;
 .showPopupViewDesign .popup-content.selectIconinfo .iconFull_Info h3 { margin-top: 0px; }
 .showPopupViewDesign .popup-content.selectIconinfo .iconItem { width:20%; float: left; padding: 5px;  }
 .showPopupViewDesign .popup-content.selectIconinfo .popupOverflowInfo { max-height: 230px;}
+
+
+
+/* CASE MANAGER STYLE START */
+.ela__sideNav_nav_flyout .casemanager_panel_section {
+    display: block;
+    clear: both;
+    padding-top: 20px;
+}
+.casemanager_panel_section { font-size: 14px; }
+.casemanager_panel_section .ui-widget.ui-widget-content { border: 0px solid #c5c5c5; padding: 0px; background: none; }
+.ui-widget-header {
+    border: 0px solid #dddddd;
+    background: none;
+    color: #333333;
+    font-weight: normal; font-family: 'Alternate Gothic No3 D', sans-serif;
+    }
+.casemanager_panel_section .ui-tabs .ui-tabs-nav { padding: 0; text-align: center; }
+.casemanager_panel_section .ui-tabs .ui-tabs-nav li { float: none; display: inline-block; margin: 0px 3px; border: 2px solid #1f4a9a;
+    background: none;  border-radius: 0px; }
+.casemanager_panel_section .ui-tabs .ui-tabs-nav li a { color: #1f4a9a; font-size: 18px; padding: 0px 15px; }
+.casemanager_panel_section .ui-tabs .ui-tabs-nav li.ui-tabs-active { background: #1f4a9a; padding-bottom: 0px; color: #FFF; }
+.casemanager_panel_section .ui-tabs .ui-tabs-nav li.ui-tabs-active a {  color: #FFF; }
+.casemanager_panel_section .ui-tabs .ui-tabs-panel { padding: 15px 0px; }
+.casemanager_panel_section .ela__treeview_listing {  font-family: 'Alternate Gothic No3 D', sans-serif; font-size: 16px; }
+.casemanager_panel_section .case-filter-panel { max-height: 63vh;  }
+.casemanager_panel_section .case-filter-panel.case-filter-manage_panel {max-height: 72vh;}
+.case_ftbuttonMeta { display: block; text-align: center; }
+.case_ftbuttonMeta .btn-border { display: inline-block; vertical-align: middle; font-family: 'Alternate Gothic No3 D', sans-serif; font-size: 18px; padding: 0px 20px; background-color: transparent; color: #FFF; border: 2px solid #FFF; margin: 0px 2px; }
+.case_ftbuttonMeta .btn-border:hover { background-color: #FFF; color: #5e5957; }
+.casemanager_panel_section .ui-accordion .ui-accordion-content { padding: 10px 10px; }
+.case__tabs_panel .case-filter-panel ul li { padding: 2px 10px 2px 10px; }
+
+.case__tabs_panel .case_name_field { display: block; clear: both; margin-bottom: 10px; }
+.case__tabs_panel .case_name_field input[type='text'] { width: 100%; padding: 4px 10px; background-color: transparent; border: 2px solid #1f4a9a; color: #1f4a9a; text-transform: uppercase;font-family: 'Alternate Gothic No3 D', sans-serif;  font-size: 18px; }
+.case__tabs_panel .case_name_field input[type='text']:focus { outline: none; }
+.case__tabs_panel .case_name_field input[type='text']::-webkit-input-placeholder { color: #1f4a9a; }
+.case__tabs_panel .case_name_field input[type='text']::-moz-placeholder { color: #1f4a9a; }
+.case__tabs_panel .case_name_field input[type='text']:-ms-input-placeholder { color: #1f4a9a; }
+.case__tabs_panel .case_name_field input[type='text']:-moz-placeholder { color: #1f4a9a; }
+
+/* Context menu */
+.ela__context-menu{
+    display: none;
+    position: absolute;
+    border: 1px solid #1f4a9a;
+    padding: 5px;
+    border-radius: 3px;
+    width: 120px;
+    background: #1f4a9a;
+    margin-top: -20px;
+}
+.ela__context-menu:before { content: ''; background-image: url(../images/icons/rightClick-arrow.png); background-repeat: no-repeat; background-size: 12px 19px; position: absolute; left: -10px; top: 10px;     width: 12px;
+    height: 19px; }
+.ela__context-menu ul{
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.ela__context-menu ul li{
+    padding: 3px 10px;
+    font-size: 16px;
+    color: #FFF;
+
+}
+
+.ela__context-menu ul li:hover{
+    cursor: pointer;
+    background-color: #FFF;
+    color: #1f4a9a;
+}

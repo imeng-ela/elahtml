@@ -4,8 +4,6 @@ $('.tactical_expand').click(function(){
     $(content_id).slideToggle('fast');
 });
 
-
-
 /* Draggable Scripts Popup */
 $( function() {
     $( "#ela_draggableDiv" ).draggable({ handle: "div.sideNav-head" });
@@ -14,7 +12,6 @@ $( function() {
     //$("div.ela__sidebarForm_section").draggable( 'disable' )
     //$( "div.ela__sidebarForm_section" ).disableSelection();
 } );
-
 
 $( function() {
     $( ".add_ShowPopupDiv" ).draggable({ handle: "div.header" });
@@ -29,6 +26,7 @@ $( function() {
 $( function() {
     $( "#Tactabing" ).tabs();
 });
+
 $( function() {
     $( "#tac_accordion" ).accordion();
   });
@@ -361,3 +359,50 @@ function ShowHideDiv(btnPassport) {
     var dvPassport = document.getElementById("CI_ShowHide_1");
     dvPassport.style.display = btnPassport.value == "Yes" ? "block" : "none";
 }
+
+
+$( function() {
+    $( "#casemanager_tab" ).tabs();
+});
+/* RIGHT CLICK MENU SCRIPTS */
+
+$(document).ready(function(){
+            
+            // Hide context menu
+            $(document).bind('contextmenu click',function(){
+                $(".ela__context-menu").hide();
+                $("#txt_id").val("");
+            });
+
+            // disable right click and show custom context menu
+            $(".ela__Rightclick ul li").bind('contextmenu', function (e) {
+                var id = this.id;
+                $("#txt_id").val(id);
+                                
+                var top = e.pageY+0;
+                var left = e.pageX;
+
+                // Show contextmenu
+                $(".ela__context-menu").toggle(0).css({
+                    top: top + "px",
+                    left: left + "px"
+                });
+
+                // Disable default menu
+                return false;
+            });
+
+            // disable ela__context-menu from custom menu
+            $('.ela__context-menu').bind('contextmenu',function(){
+                return false;
+            });
+            
+            // Clicked ela__context-menu item
+            $('.ela__context-menu li').click(function(){
+                var className = $(this).find("span:nth-child(1)").attr("class");
+                var titleid = $('#txt_id').val();
+                $( "#"+ titleid ).css( "background-color", className );
+                $(".ela__context-menu").hide();
+            });
+
+        });
