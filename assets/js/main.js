@@ -406,3 +406,31 @@ $(document).ready(function(){
             });
 
         });
+
+
+/* CASE MANAGER EXPAND SCRIPTS */
+$('.caseManager_expand').click(function(){
+    target_num = $(this).attr('id').split('-')[1];
+    content_id = '#caseManager_expandable-'.concat(target_num);
+    $(content_id).slideToggle('fast');
+});
+
+
+/* Search Section scripts */
+
+$(".searchType img").click(function() {
+    $(".searchType_option").toggle();
+    $(".searchType").toggleClass("open");
+
+});
+
+$('.searchType_option ul li img').on('click', function(){
+    var imgURL = $(this).attr('src');
+    $('.searchType img').attr('src',imgURL);
+    $(".searchType_option").hide();
+    var showSearchType = $(this).parent().attr('data-id');
+    $(".right_searchSetting_col .showSearchForm").hide(); 
+    $(".searchType").removeClass("open");
+    $("."+showSearchType).show();
+});
+    

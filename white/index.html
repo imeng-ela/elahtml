@@ -1399,6 +1399,155 @@
                                 </ul>
                             </div>  
                         </div>
+                        <!-- Search container start -->
+                        <div class="ela__sidebarForm_section search__sidebarForm_section">
+                            
+                            <!-- Form Row #1 -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="search-container-panel">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search__footer_action">
+                                <div class="left_searchType_icon">
+                                    <div class="show_search_option">
+                                        <span class="searchType">
+                                            <img src="assets/images/search_sec/Open-Text-Search-Icon.png" alt="searchByText" title="Search By Text">
+                                        </span>
+                                        <div class="searchType_option" style="display: none;">
+                                            <ul>
+                                                <li data-id="showFrom_Option_01">
+                                                    <img src="assets/images/search_sec/Open-Text-Search-Icon.png" alt="searchByText" title="Search By Text">
+                                                </li>
+                                                <li data-id="showFrom_Option_02">
+                                                    <img src="assets/images/search_sec/Point-Search-Icon.png" alt="searchByPoint" title="Search By Point">
+                                                </li>
+                                                <li data-id="showFrom_Option_03">
+                                                    <img src="assets/images/search_sec/Line-Search-Icon.png" alt="searchByLine" title="Search By Line">
+                                                </li>
+                                                <li data-id="showFrom_Option_04">
+                                                    <img src="assets/images/search_sec/Poly-Search-Icon.png" alt="searchByPolygon" title="Search By Polygon">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        
+                                    
+                                    </div>
+                                </div>
+                                <div class="right_searchSetting_col" style="color: #FFF;">
+                                    <div class="showFrom_Option_01 showSearchForm">
+                                        <input placeholder="Enter Search Criteria.." class="form-control searchField">
+                                    </div>
+                                    <div class="showFrom_Option_02 showSearchForm" style="display: none;">
+                                        <div class="fieldGroup">
+                                            <span class="searchMode-style"><a href="">Advanced Search</a></span>
+                                            <form>
+                                                <div class="search-custom-input">
+                                                    <label class="label">MGRS:</label>
+                                                    <span class="searchItem with-icon">
+                                                        <input class="form-control" type="text">
+                                                        <img class="pointer-style" src="assets/images/search_sec/PointSearch.png" title="Select Co-ordinates">
+                                                    </span>
+                                                </div>
+                                                <div class="search-custom-input">
+                                                    <label class="label">Radius:</label>
+                                                    <span class="searchItem">
+                                                        <input class="form-control" type="text">
+                                                    </span>
+                                                </div>
+                                                <div class="search-custom-input">
+                                                    <label class="label">Unit:</label>
+                                                    <span class="searchItem">
+                                                        <select class="form-control">
+                                                            <option value="0">KM</option>
+                                                            <option value="1">Miles</option>
+                                                        </select>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="showFrom_Option_03 showSearchForm" style="display: none;">
+                                        <div class="fieldGroup">
+                                            <span class="searchMode-style"><a href="">Advanced Search</a></span>
+                                            <form>
+                                                <h4>Start Point</h4>
+                                                <div class="search-custom-input">
+                                                    <label class="label">MGRS:</label>
+                                                    <span class="searchItem with-icon">
+                                                        <input class="form-control" type="text">
+                                                        <img class="pointer-style" src="assets/images/search_sec/PointSearch.png" title="Select Co-ordinates">
+                                                    </span>
+                                                </div>
+                                                <h4>End Point</h4>
+                                                <div class="search-custom-input">
+                                                    <label class="label">MGRS:</label>
+                                                    <span class="searchItem">
+                                                        <input class="form-control" type="text">
+                                                    </span>
+                                                </div>
+                                                <div class="search-custom-input">
+                                                    <label class="label">Radius:</label>
+                                                    <span class="searchItem">
+                                                        <input class="form-control" type="text">
+                                                    </span>
+                                                </div>
+                                                <div class="search-custom-input">
+                                                    <label class="label">Unit:</label>
+                                                    <span class="searchItem">
+                                                        <select class="form-control">
+                                                            <option value="0">KM</option>
+                                                            <option value="1">Miles</option>
+                                                        </select>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="showFrom_Option_04 showSearchForm" style="display: none;">
+                                        <div class="fieldGroup">
+                                            <span class="searchMode-style"><a href="">Advanced Search</a></span>
+                                            <div class="polygon-fields">
+                                               <button type="button" class="btn btn-md btn-block btn-border">SELECT POINTS</button>
+                                               <button type="button" class="btn btn-md btn-block btn-border">DRAW POLYGON</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="searchFilter_col">
+                                    <ul>
+                                        <li><a href=""><img src="assets/images/nav-icon/search-white-icon.png"></a></li>
+                                        <li class="filter_nav">
+                                          <div class="dropdown">
+                                            <a href="" id="layerDrop_filter_Option" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="assets/images/nav-icon/filter-icon.png" /></a>
+                                            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="layerDrop_filter_Option">
+                                            <ul class="list-unstyled history-filterOption">
+                                                <li>History</li>
+                                                <li><input type="radio"> <label>30 Days</label></li>
+                                                <li><input type="radio"> <label>60 Days</label></li>
+                                                <li><input type="radio"> <label>90 Days</label></li>
+                                                <li><input type="radio"> <label>Custom: <input type="text" placeholder="YYYYMMDD"> to <input type="text" placeholder="YYYYMMDD"></label></li>
+                                                <li><a href="">Clear history</a></li>
+                                                <li class="mt_10">Event Type</li>
+                                                <li><input type="radio"> <label>Strategic Developments</label></li>
+                                                <li><input type="radio"> <label>Battles</label></li>
+                                                <li><input type="radio"> <label>Riots</label></li>
+                                                <li><input type="radio"> <label>Explosions/Remote Violence</label></li>
+                                                <li><input type="radio"> <label>Violence Against Civilians</label></li>
+                                                <li><input type="radio"> <label>Protests</label></li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                        </li>
+                                        <li><a href=""><img src="assets/images/nav-icon/close-icon.png"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Search container end -->
                     </div>
                     <!-- Panel  #Search Div End -->
 
@@ -2901,154 +3050,160 @@
                                   </ul>
                                   <div id="case-create">
                                     <div class="case__tabs_panel">
-                                        <div class="case_name_field">
-                                            <input type="text" placeholder="Enter Case Name" name="">
-                                        </div>
-                                        <div class="casemanager_entity_wrapper scrollable">
+                                        
+                                        <h3 class="caseManager_expand" id="caseManager-0">
+                                             <div class="case_name_field">
+                                                <input type="text" placeholder="Enter Case Name" name="">
+                                            </div>
+                                        </h3>
+                                        <div class="caseManager_expandable" id="caseManager_expandable-0" style="display: none;">
+                                            <div class="casemanager_entity_wrapper scrollable">
                                             <div class="case-filter-panel ela__treeview_panel">
-                                            <div id="case_treeview_container" class="ela__treeview_listing ela__Rightclick">
-                                                <ul id="case_treeview" class="ela__treeview_base">
-                                                    
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> SHAH 6.8.2020
-                                                        </label>
-                                                    </li>
+                                                <div id="case_treeview_container" class="ela__treeview_listing ela__Rightclick">
+                                                    <ul id="case_treeview" class="ela__treeview_base">
+                                                        
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> SHAH 6.8.2020
+                                                            </label>
+                                                        </li>
 
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> SHAH 2
-                                                        </label>
-                                                    </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> SHAH 2
+                                                            </label>
+                                                        </li>
 
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> DFSDFDSFS
-                                                        </label>
-                                                    </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> DFSDFDSFS
+                                                            </label>
+                                                        </li>
 
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> SHAH 6.8.2020
-                                                        </label>
-                                                    </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> SHAH 6.8.2020
+                                                            </label>
+                                                        </li>
 
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> SHAH 2
-                                                        </label>
-                                                    </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> SHAH 2
+                                                            </label>
+                                                        </li>
 
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> DFSDFDSFS
-                                                        </label>
-                                                    </li>
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> SHAH 6.8.2020
-                                                        </label>
-                                                    </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> DFSDFDSFS
+                                                            </label>
+                                                        </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> SHAH 6.8.2020
+                                                            </label>
+                                                        </li>
 
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> SHAH 2
-                                                        </label>
-                                                    </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> SHAH 2
+                                                            </label>
+                                                        </li>
 
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> DFSDFDSFS
-                                                        </label>
-                                                    </li>
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> SHAH 6.8.2020
-                                                        </label>
-                                                    </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> DFSDFDSFS
+                                                            </label>
+                                                        </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> SHAH 6.8.2020
+                                                            </label>
+                                                        </li>
 
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> SHAH 2
-                                                        </label>
-                                                    </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> SHAH 2
+                                                            </label>
+                                                        </li>
 
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> DFSDFDSFS
-                                                        </label>
-                                                    </li>
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> SHAH 6.8.2020
-                                                        </label>
-                                                    </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> DFSDFDSFS
+                                                            </label>
+                                                        </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> SHAH 6.8.2020
+                                                            </label>
+                                                        </li>
 
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> SHAH 2
-                                                        </label>
-                                                    </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> SHAH 2
+                                                            </label>
+                                                        </li>
 
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> DFSDFDSFS
-                                                        </label>
-                                                    </li>
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> SHAH 6.8.2020
-                                                        </label>
-                                                    </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> DFSDFDSFS
+                                                            </label>
+                                                        </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> SHAH 6.8.2020
+                                                            </label>
+                                                        </li>
 
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> SHAH 2
-                                                        </label>
-                                                    </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> SHAH 2
+                                                            </label>
+                                                        </li>
 
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> DFSDFDSFS
-                                                        </label>
-                                                    </li>
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> SHAH 6.8.2020
-                                                        </label>
-                                                    </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> DFSDFDSFS
+                                                            </label>
+                                                        </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> SHAH 6.8.2020
+                                                            </label>
+                                                        </li>
 
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> SHAH 2
-                                                        </label>
-                                                    </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> SHAH 2
+                                                            </label>
+                                                        </li>
 
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> DFSDFDSFS
-                                                        </label>
-                                                    </li>
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> SHAH 6.8.2020
-                                                        </label>
-                                                    </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> DFSDFDSFS
+                                                            </label>
+                                                        </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> SHAH 6.8.2020
+                                                            </label>
+                                                        </li>
 
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> SHAH 2
-                                                        </label>
-                                                    </li>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> SHAH 2
+                                                            </label>
+                                                        </li>
 
-                                                    <li><i class="fa fa-plus"></i>
-                                                        <label>
-                                                            <input id="" data-id="" type="checkbox"> DFSDFDSFS
-                                                        </label>
-                                                    </li>
-                                                </ul>
+                                                        <li><i class="fa fa-plus"></i>
+                                                            <label>
+                                                                <input id="" data-id="" type="checkbox"> DFSDFDSFS
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
+
                                         </div>
 
                                         <div class="symbol_create_btnMeta symbol-btn-div">
@@ -3057,10 +3212,12 @@
                                                 <button class="button btn-border">CANCEL</button>
                                             </div>
                                         </div>
+                                       
+                                        
                                     </div>
                                   </div>
                                   <div id="case-manager">
-                                    <div class="case__tabs_panel">
+                                    <div class="case__tabs_panel btop-none">
                                         <div class="case-filter-panel ela__treeview_panel case-filter-manage_panel">
                                             <div id="case_treeview_container" class="ela__treeview_listing ela__Rightclick">
                                                 <ul id="case_treeview" class="ela__treeview_base">
@@ -3440,6 +3597,10 @@
                                                     </li>
                                                 </ul>
                                             </div>
+                                        </div>
+                                        <div class="tac_ftbuttonMeta">
+                                            <button class="btn-border">ADD</button>
+                                            <button class="btn-border">DELETE</button>
                                         </div>
                                     </div>
                                   </div>
